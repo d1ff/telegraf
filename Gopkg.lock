@@ -509,7 +509,11 @@
 [[projects]]
   digest = "1:6e73003ecd35f4487a5e88270d3ca0a81bc80dc88053ac7e4dcfec5fba30d918"
   name = "github.com/gogo/protobuf"
-  packages = ["proto"]
+  packages = [
+    "gogoproto",
+    "proto",
+    "protoc-gen-gogo/descriptor",
+  ]
   pruneopts = ""
   revision = "636bf0302bc95575d69441b25a2603156ffdddf1"
   version = "v1.1.1"
@@ -895,12 +899,43 @@
   version = "v1.5.0"
 
 [[projects]]
+  digest = "1:bfb5629010b19c1dbe14a4c58942ab70f536d284e4db6580a661f9f542daf5cf"
+  name = "github.com/nats-io/nats.go"
+  packages = [
+    ".",
+    "encoders/builtin",
+    "util",
+  ]
+  pruneopts = ""
+  revision = "e2837a2879e82886f6e21715e3a0217fdc46d370"
+  version = "v1.8.1"
+
+[[projects]]
+  digest = "1:77920e8bb64cdab4d934131c0b23ed8b891691aa31c26e5c3dc422b50e5ce378"
+  name = "github.com/nats-io/nkeys"
+  packages = ["."]
+  pruneopts = ""
+  revision = "0073b400419be3ffb022ef46b675805e92534a34"
+  version = "v0.1.0"
+
+[[projects]]
   digest = "1:be61e8224b84064109eaba8157cbb4bbe6ca12443e182b6624fdfa1c0dcf53d9"
   name = "github.com/nats-io/nuid"
   packages = ["."]
   pruneopts = ""
   revision = "289cccf02c178dc782430d534e3c1f5b72af807f"
   version = "v1.0.0"
+
+[[projects]]
+  digest = "1:f66b8dd5f3e23d63f75f06e80287a8e7954909ec530eb08a6a9ca2845fad20aa"
+  name = "github.com/nats-io/stan.go"
+  packages = [
+    ".",
+    "pb",
+  ]
+  pruneopts = ""
+  revision = "c5efdc3e2330fb9c81f34082d0c04a8de817748a"
+  version = "v0.5.0"
 
 [[projects]]
   digest = "1:7a69f6a3a33929f8b66aa39c93868ad1698f06417fe627ae067559beb94504bd"
@@ -1757,6 +1792,8 @@
     "github.com/multiplay/go-ts3",
     "github.com/nats-io/gnatsd/server",
     "github.com/nats-io/go-nats",
+    "github.com/nats-io/nats.go",
+    "github.com/nats-io/stan.go",
     "github.com/nsqio/go-nsq",
     "github.com/openconfig/gnmi/proto/gnmi",
     "github.com/openzipkin/zipkin-go-opentracing",
